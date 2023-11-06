@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Certificate Verifier</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #3498db; /* Blue background color */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        h1 {
+            color: #fff; /* White text color */
+            font-size: 2rem;
+        }
+
+        form {
+            text-align: center;
+            font-size: 1.2rem;
+        }
+
+        label, input, button {
+            display: block;
+            margin: 10px;
+            font-size: 1.2rem;
+        }
+
+        button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 3px;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Certificate Verifier</h1>
+    <form id="verifierForm">
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="certificate ID">Certificate Data:</label>
+        <input type="text" id="certificateData" name="certificateData" required>
+
+        <button type="submit">Verify and Download</button>
+    </form>
+</body>
+</html>
